@@ -64,3 +64,14 @@ int main()
 
     return 0;
 }
+
+
+// Function to Display Date & Time
+void displayDateTime()
+{
+    time_t now;
+    time(&now);
+
+    printf("\n");
+    printf("\t\t\t\t%s", ctime(&now));
+}
