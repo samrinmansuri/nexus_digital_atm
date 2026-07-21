@@ -104,3 +104,13 @@ int verifyPin(int pin)
     printf("\nPIN Verified Successfully.\n");
     return 1;
 }
+
+// Function to Display Menu
+void showMenu()
+{
+    printf("\n\n\t\t*** AVAILABLE TRANSACTIONS ***");
+    printf("\n\t\t1. Withdrawal");
+    printf("\n\t\t2. Deposit");
+    printf("\n\t\t3. Check Balance");
+}
+
