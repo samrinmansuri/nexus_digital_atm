@@ -75,3 +75,32 @@ void displayDateTime()
     printf("\n");
     printf("\t\t\t\t%s", ctime(&now));
 }
+
+// Function to Verify PIN
+int verifyPin(int pin)
+{
+    int entered_pin = 0;
+    int count = 0;
+
+    while(pin != entered_pin)
+    {
+        printf("\nPlease Enter Your PIN : ");
+        scanf("%d", &entered_pin);
+
+        if(entered_pin != pin)
+        {
+            Beep(500,450);
+            printf("Invalid PIN!");
+            count++;
+        }
+
+        if(count == 3)
+        {
+            printf("\nToo many incorrect attempts.");
+            return 0;
+        }
+    }
+
+    printf("\nPIN Verified Successfully.\n");
+    return 1;
+}
