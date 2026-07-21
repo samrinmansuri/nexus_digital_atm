@@ -22,3 +22,8 @@ int main()
 
     printf("\n\t\t\t**** WELCOME TO HDFC BANK ****\n");
     
+    // Verify PIN
+    if(!verifyPin(pin))
+    {
+        return 0;
+    }
