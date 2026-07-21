@@ -114,3 +114,25 @@ void showMenu()
     printf("\n\t\t3. Check Balance");
 }
 
+// Function for Withdrawal
+float withdraw(float balance)
+{
+    int amount;
+
+    printf("\n\t\tEnter Amount : ");
+    scanf("%d", &amount);
+
+    if(amount > balance)
+    {
+        printf("\n\t\tInsufficient Balance!");
+    }
+    else
+    {
+        balance -= amount;
+        printf("\n\t\tWithdrawal Successful.");
+        printf("\n\t\tCurrent Balance : Rs.%.2f", balance);
+    }
+
+    return balance;
+}
+
