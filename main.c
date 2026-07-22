@@ -136,3 +136,18 @@ float withdraw(float balance)
     return balance;
 }
 
+// Function for Deposit
+float deposit(float balance)
+{
+    int amount;
+
+    printf("\n\t\tEnter Amount : ");
+    scanf("%d", &amount);
+
+    balance += amount;
+
+    printf("\n\t\tDeposit Successful.");
+    printf("\n\t\tCurrent Balance : Rs.%.2f", balance);
+
+    return balance;
+}
