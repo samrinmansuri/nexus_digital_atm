@@ -20,7 +20,7 @@ int main()
 
     displayDateTime();
 
-    printf("\n\t\t\t**** WELCOME TO HDFC BANK ****\n");
+    printf("\n\t\t\t**** WELCOME TO NEXUS DIGITAL ATM ****\n");
     
     // Verify PIN
     if(!verifyPin(pin))
